@@ -61,7 +61,7 @@ struct AddView: View {
                         Text("Кол-во повторений: \(repetitions)")
                             .font(.headline.weight(.bold))
                         Spacer()
-                        Stepper("\(repetitions)", value: $repetitions)
+                        Stepper("\(repetitions)", value: $repetitions, in: 0...100)
                             .font(.headline.weight(.heavy))
                             .labelsHidden()
                         

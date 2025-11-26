@@ -59,13 +59,13 @@ struct ContentView: View {
                             .frame(maxWidth: .infinity)
                             .font(.title2.weight(.heavy))
                         }
-                        Stepper("Кол-во повторений: \(habit.repetitions)", value: $habit.repetitions)
+                        Stepper("Кол-во повторений: \(habit.repetitions)", value: $habit.repetitions, in: 0...100)
                             .font(.headline.weight(.heavy))
                     }
                     .foregroundColor(.secondary)
                     .padding()
                     .frame(maxWidth: .infinity)
-                    .background(.ultraThickMaterial)
+                    .background(.white)
                     .clipShape(.rect(cornerRadius: 15))
                     .padding()
 

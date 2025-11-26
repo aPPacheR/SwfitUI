@@ -10,7 +10,7 @@ import SwiftUI
 struct HabitView: View {
     @Environment(\.dismiss) var dismiss
 
-    var habitTrack: HabitTrack  // ссылка на список привычек
+    var habitTrack: HabitTrack
     var habit: Habit
 
     
@@ -29,7 +29,7 @@ struct HabitView: View {
                 .foregroundColor(.secondary)
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(.regularMaterial)
+                .background(.white)
                 .clipShape(.rect(cornerRadius: 15))
                 .padding(.horizontal)
                 
@@ -44,7 +44,7 @@ struct HabitView: View {
                 .foregroundColor(.secondary)
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(.regularMaterial)
+                .background(.white)
                 .clipShape(.rect(cornerRadius: 15))
                 .padding(.horizontal)
                 
@@ -59,7 +59,7 @@ struct HabitView: View {
                 .foregroundColor(.secondary)
                 .padding()
                 .frame(maxWidth: .infinity, alignment: .leading)
-                .background(.regularMaterial)
+                .background(.white)
                 .clipShape(.rect(cornerRadius: 15))
                 .padding(.horizontal)
                 
@@ -74,7 +74,7 @@ struct HabitView: View {
                         .foregroundColor(.red)
                         .frame(maxWidth: 200)
                         .padding()
-                        .background(.regularMaterial)
+                        .background(.white)
                         .clipShape(RoundedRectangle(cornerRadius: 15))
                         .padding()
                 }
@@ -89,7 +89,7 @@ struct HabitView: View {
 }
 
 #Preview {
-    let habitTest = Habit(id: UUID(), name: "Test", description: "Test", repetitions: 10)
+    let habitTest = Habit(id: UUID(), name: "Play sports", description: "Exercise every day", repetitions: 5)
     let habitTrackTest = HabitTrack()
     habitTrackTest.habits = [habitTest] // добавляем тестовую привычку
     return HabitView(habitTrack: habitTrackTest, habit: habitTest)
