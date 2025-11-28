@@ -36,7 +36,7 @@
 
 ![Скриншот1 интерфейса приложения](images/Bookworm-demo1.png)
 
-![Скриншот2 интерфейса приложения](images/Bookworm-demo3.png)
+![Скриншот2 интерфейса приложения](images/Bookworm-demo2.png)
 
 ![Скриншот3 интерфейса приложения](images/Bookworm-demo3.png)
 
